@@ -1,5 +1,5 @@
 # PUI homework
 
-Deployed website: `add the URL to your deployed website`
+Deployed website: https://leileitun.github.io/pui-lei-hw-template/
 
-Repository link: `add the URL to this repository`
+Repository link: https://github.com/leileitun/pui-lei-hw-template)https://github.com/leileitun/pui-lei-hw-template
