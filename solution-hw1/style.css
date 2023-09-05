@@ -69,27 +69,23 @@ body {
 }
 
 .productpage {
-    background-color: yellow; 
     text-decoration: none;
-    font-weight: bold;
     color: black;
+}
+
+.productpage:hover {
+    background-color: yellow; 
+    font-weight: bold;
 }
 
 .cartpage {
+    text-decoration: none;
+    color: black;
+}
+
+.cartpage:hover { 
     background-color: yellow; 
-    text-decoration: none;
     font-weight: bold;
-    color: black;
-}
-
-.nocartpage {
-    text-decoration: none;
-    color: black;
-}
-
-.noproductpage { 
-    text-decoration: none; 
-    color: black;
 }
 
 #glazing, #pack {
@@ -98,4 +94,32 @@ body {
 
 button { 
     width: 150px;
+    display: inline-block;
 }
+
+button:hover { 
+    background-color: yellow; 
+    font-weight: bold;
+}
+
+#receiptline { 
+    width: 500px;
+}
+
+#inlineprice { 
+    display: inline-block;
+    padding: 10px;
+}
+
+a { 
+  text-decoration: none;  
+}
+
+.customize { 
+    text-align: left; 
+    margin: auto;
+    padding: 10px;
+    width: 13%;
+}
+
+
