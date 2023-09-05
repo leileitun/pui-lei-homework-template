@@ -33,7 +33,7 @@ body {
     text-align: left;
     bottom: 0; 
     left:0;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .roll {
@@ -60,8 +60,42 @@ body {
 
 .details:hover {
     background-color: yellow;
+    display: inline-block;
+    padding: 4px;
 }
 
 .details:hover .roll {
     font-weight: bold;
+}
+
+.productpage {
+    background-color: yellow; 
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.cartpage {
+    background-color: yellow; 
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.nocartpage {
+    text-decoration: none;
+    color: black;
+}
+
+.noproductpage { 
+    text-decoration: none; 
+    color: black;
+}
+
+#glazing, #pack {
+    width: 150px;
+}
+
+button { 
+    width: 150px;
 }
