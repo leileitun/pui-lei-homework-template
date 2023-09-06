@@ -18,6 +18,7 @@ body {
     font-family: Georgia, serif;
     justify-content: center;
     text-align: center;
+    font-size: 20px;
 }
 
 .image-container {
@@ -31,11 +32,12 @@ body {
     text-align: left;
     bottom: 0; 
     left:0;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .roll {
     text-decoration: underline;
+    color: black;
 }
 
 #pic {
@@ -56,6 +58,10 @@ body {
     border: 3px solid black;
 }
 
+select { 
+    font-size: 20px;
+}
+
 .details:hover {
     background-color: yellow;
     display: inline-block;
@@ -69,11 +75,15 @@ body {
 .productpage {
     text-decoration: none;
     color: black;
+    font-weight: bold;
+    background-color: yellow;
 }
 
-.productpage:hover {
-    background-color: yellow; 
+.cartpageyes { 
+    text-decoration: none; 
+    color: black;
     font-weight: bold;
+    background-color: yellow;
 }
 
 .cartpage {
@@ -81,10 +91,10 @@ body {
     color: black;
 }
 
-.cartpage:hover { 
-    background-color: yellow; 
-    font-weight: bold;
+.productpageno { 
+    color: black;
 }
+
 
 #glazing, #pack {
     width: 150px;
@@ -92,16 +102,15 @@ body {
 
 button { 
     width: 150px;
+    font-size: 20px;
     display: inline-block;
-}
-
-button:hover { 
-    background-color: yellow; 
+    background-color: yellow;
     font-weight: bold;
+    padding: 10px;
 }
 
 #receiptline { 
-    width: 500px;
+    width: 800px;
 }
 
 #inlineprice { 
@@ -113,11 +122,19 @@ a {
   text-decoration: none;  
 }
 
+.removal { 
+    font-size: 12px;
+    text-decoration: underline; 
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
 .customize { 
     text-align: left; 
     margin: auto;
     padding: 10px;
-    width: 18%;
+    width: 20%;
 }
 
 #pack, #glazing {
@@ -132,8 +149,14 @@ a {
 
 .alignorder { 
     display: block; 
-    margin: 0 auto;
-    justify-content: center;
+    margin: auto;
     text-align: left;
-    width: 200px;
+    justify-content: center;
+    width: 250px;
+    padding: 20px;
 }
+
+.order { 
+    line-height: 0px;
+}
+
