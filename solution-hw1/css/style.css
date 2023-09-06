@@ -1,17 +1,16 @@
+
+/*I used external source w3schools's margin property page to make spacing around elements more accurate to the mockups*/
 .logo {
     width: 400px;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 25px;
+    margin-bottom: 30px;
 }
 
 hr {
     margin-top: 0px;
     height: 4px;
     background: black;
-}
-
-.imagetitle {
-    font-size: 25px;
 }
 
 body {
@@ -21,6 +20,34 @@ body {
     font-size: 20px;
 }
 
+.productpage {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: yellow;
+}
+
+.cartpageyes { 
+    text-decoration: none; 
+    color: black;
+    font-weight: bold;
+    background-color: yellow;
+}
+
+.cartpage {
+    text-decoration: none;
+    color: black;
+}
+
+.productpageno { 
+    color: black;
+}
+
+.imagetitle {
+    font-size: 25px;
+}
+
+/* used w3schools source to create a display of inline block so elements are centered and together*/
 .image-container {
     display: inline-block;
     text-align: center;
@@ -28,13 +55,15 @@ body {
 }
 
 .details {
-    display: block;
+    display: inline-block;
     text-align: left;
     bottom: 0; 
     left:0;
     font-size: 20px;
+    padding: 20px;
 }
 
+ /* sourced text-decoration from stack overflow to remove the default hyperlink purple color */
 .roll {
     text-decoration: underline;
     color: black;
@@ -64,35 +93,11 @@ select {
 
 .details:hover {
     background-color: yellow;
-    display: inline-block;
     padding: 4px;
 }
 
 .details:hover .roll {
     font-weight: bold;
-}
-
-.productpage {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    background-color: yellow;
-}
-
-.cartpageyes { 
-    text-decoration: none; 
-    color: black;
-    font-weight: bold;
-    background-color: yellow;
-}
-
-.cartpage {
-    text-decoration: none;
-    color: black;
-}
-
-.productpageno { 
-    color: black;
 }
 
 
