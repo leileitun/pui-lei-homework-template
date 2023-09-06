@@ -17,7 +17,7 @@ body {
     font-family: Georgia, serif;
     justify-content: center;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .productpage {
@@ -44,7 +44,12 @@ body {
 }
 
 .imagetitle {
-    font-size: 25px;
+    font-size: 40px;
+}
+
+#pricesize { 
+    font-size: 35px;
+    margin-top: 0px;
 }
 
 /* used w3schools source to create a display of inline block so elements are centered and together*/
@@ -67,6 +72,7 @@ body {
 .roll {
     text-decoration: underline;
     color: black;
+    font-size: 35px;
 }
 
 .pic {
@@ -87,10 +93,6 @@ body {
     border: 3px solid black;
 }
 
-select { 
-    font-size: 20px;
-}
-
 .details:hover {
     background-color: yellow;
     padding: 4px;
@@ -100,15 +102,17 @@ select {
     font-weight: bold;
 }
 
+select { 
+    font-size: 30px;
+}
 
 #glazing, #pack {
-    width: 150px;
+    width: 300px;
 }
 
 button { 
-    width: 150px;
+    width: 230px;
     font-size: 20px;
-    display: inline-block;
     background-color: yellow;
     font-weight: bold;
     padding: 10px;
@@ -120,7 +124,8 @@ button {
 
 #inlineprice { 
     display: inline-block;
-    padding: 10px;
+    padding: 20px;
+    font-weight: bold;
 }
 
 a { 
@@ -157,7 +162,7 @@ a {
     margin: auto;
     text-align: left;
     justify-content: center;
-    width: 250px;
+    width: 450px;
     padding: 20px;
 }
 
@@ -165,3 +170,10 @@ a {
     line-height: 0px;
 }
 
+p {
+    font-size: 35px;
+}
+
+button { 
+    font-size: 35px;
+}
