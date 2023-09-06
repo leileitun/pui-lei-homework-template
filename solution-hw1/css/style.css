@@ -47,7 +47,7 @@ body {
     font-size: 40px;
 }
 
-#pricesize { 
+.pricesize { 
     font-size: 35px;
     margin-top: 0px;
 }
