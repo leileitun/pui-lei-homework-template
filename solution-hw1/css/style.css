@@ -17,7 +17,7 @@ body {
     font-family: Georgia, serif;
     justify-content: center;
     text-align: center;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 .productpage {
@@ -48,7 +48,7 @@ body {
 }
 
 .pricesize { 
-    font-size: 35px;
+    font-size: 30px;
     margin-top: 0px;
 }
 
@@ -72,7 +72,7 @@ body {
 .roll {
     text-decoration: underline;
     color: black;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .pic {
