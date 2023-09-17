@@ -14,6 +14,8 @@
     flex-grow: 1; 
 }
 
+/*I used external source w3schools's margin property page to make spacing around elements more accurate to the mockups*/
+
 .elements { 
     display: flex; 
     justify-content: flex-end;
@@ -72,6 +74,8 @@ hr {
     border: 3px solid black;
 }
 
+/* Sourced how to specify the size of gutters between rows of my containers from stack overflow and mozilla developer */
+
 .image-container { 
     display: flex;
     gap: 20px;
@@ -85,6 +89,8 @@ hr {
     margin-left: 100px;
     margin-right: 100px;
 }
+
+/* I used sources mozilla developer and w3schools in order to learn more about flex-grow and how it can be used to grow relative to page */
 
 .details { 
     flex-grow: 1;
@@ -128,6 +134,7 @@ hr {
     margin-right: 40px;
 }
 
+/* Sourced flex-direction css from mozilla developer to set how my flex items are placed */
 .productdetailpage {
     display: flex;
     flex-direction: row;
@@ -149,6 +156,8 @@ body {
     font-size: 26px;
 }
 
+/* used w3schools source to create a display of inline block so elements are centered and together*/
+
 #inlineprice { 
     display: inline-block;
     padding: 20px;
@@ -168,6 +177,8 @@ button {
     font-weight: bold;
     padding: 10px;
 }
+
+ /* sourced text-decoration from stack overflow to remove the default hyperlink purple color */
 
 .cartpageyes { 
     text-decoration: none; 
