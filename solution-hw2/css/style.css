@@ -113,6 +113,7 @@ hr {
 .pricesize { 
     font-size: 28px;
     margin-top: 0px;
+    color: black;
 }
 
 #cartitem { 
@@ -137,6 +138,7 @@ hr {
 }
 
 select { 
+    font-family: 'Times New Roman', Times, serif;
     font-size: 26px;
     padding: 10px;
     width: 300px;
@@ -201,7 +203,7 @@ button {
 }
 
 .order {
-    line-height: 5px;
+    line-height: 7px;
     margin-left: 25px;
 }
 
@@ -219,7 +221,6 @@ button {
 }
 
 #receiptline { 
-    width: 810px;
     margin: auto;
     margin-left: 450px;
 }
