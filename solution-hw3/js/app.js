@@ -58,7 +58,7 @@ function packChange(){
   displayPrice(updatePrice()); 
 }
 function updatePrice(){
-  totalPrice = (basePrice + glazePrice) * packSize; 
+  totalPrice = (basePrice + glazePrice)*packSize; 
   return totalPrice; 
 }
 
