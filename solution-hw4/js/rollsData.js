@@ -68,15 +68,17 @@ function displayPrice(totalPrice){
   price.textContent = "$ " + totalPrice.toFixed(2);
 }
 
-class Roll {
-    constructor(rollType, rollGlazing, packSize, basePrice) {
-        this.type = rollType;
-        this.glazing =  rollGlazing;
-        this.size = packSize;
-        this.basePrice = basePrice;
-    }
-}
+// class Roll {
+//     constructor(rollType, rollGlazing, packSize, basePrice) {
+//         this.type = rollType;
+//         this.glazing =  rollGlazing;
+//         this.size = packSize;
+//         this.basePrice = basePrice;
+//     }
+// }
 
+// const cartButton = document.querySelector('#cartbutton');
+// cartButton.addEventListener("click",)
 
 
 
