@@ -27,11 +27,9 @@ const rolls = {
 
 const cart = []; 
 
-//gets query string portion of URL and stores it
 const queryString = window.location.search; 
-
 const params = new URLSearchParams(queryString); //parses string to access values
-const rollType = params.get('roll');//gets value or roll from URL
+const rollType = params.get('roll');//gets value of roll from URL
 
 const rollTitle = document.querySelector('#imagetitle'); //selects imagetitle HTML and stores it in new variable to display title
 rollTitle.innerText = rollType + ' Cinnamon Roll'; //updates text
@@ -39,45 +37,38 @@ rollTitle.innerText = rollType + ' Cinnamon Roll'; //updates text
 const rollImage = document.querySelector('#cartitem');//select cartpic html and stores it in this variable
 rollImage.src = '../assets/products/' + rollType + '-cinnamon-roll.jpg'; //load according to rolltype
 
-//get dropdown elements
-// let glazingElement = document.querySelector('#glazing-select'); 
-// let packElement = document.querySelector('#pack-select');
-// let price = document.querySelector('#inlineprice'); 
+// let basePrice = rolls[rollType]['basePrice'];
+// let glazePrice = 0;
+// let totalPrice = 0;
+// let packSize = 1;
 
-//take the HTML elements and we want them to react on change (event type) and when changed, activate functions
-glazingElement.addEventListener("change", glazingChange);
-packElement.addEventListener("change", packChange);
-
-function updatePriceAgain(){
-    let glazing = glazingElement.value; 
-    let packsize = parseInt(packElement.value); 
-
-    let newBasePrice = rolls[rollType].basePrice;
-    let total = newBasePrice;
-
-    if (packsize === 3){
-        total = total*3; 
-    } else if (packsize === 6){
-        total = total*6; 
-    } else if (packsize === 12){
-        total = total*12; 
-    }
-    price.textContext = total.toFixed(2);
+//when change event happens, we want to update glazePrice to whatever the value is gonna be
+//source for parseFloat: stackoverflow when looking up NaN error
+function glazingChange() {
+  glazePrice = parseFloat(this.value); 
+  console.log(glazePrice);
+  displayPrice(updatePrice()); 
 }
 
-updatePriceAgain();
-
-let addCartButton = document.querySelector('#cartbutton'); 
-
-// addCartButton.addEventListener("onclick", )
-
-class Roll {
-    constructor(rollType, rollGlazing, packSize, basePrice) {
-        this.type = rollType;
-        this.glazing =  rollGlazing;
-        this.size = packSize;
-        this.basePrice = basePrice;
-    }
+function packChange(){
+  packSize = this.value; 
+  console.log(packSize);
+  displayPrice(updatePrice()); 
 }
+
+let newbase = rolls[rollType]['basePrice'];
+
+function updatePrice(){
+  totalPrice = (newbase + glazePrice)*packSize; 
+  return totalPrice; 
+}
+updatePrice();
+
+
+function displayPrice(totalPrice){
+  price.textContent = "$ " + totalPrice.toFixed(2);
+}
+displayPrice(totalPrice);
+updatePrice();
 
 

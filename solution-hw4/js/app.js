@@ -58,6 +58,7 @@ function packChange(){
   displayPrice(updatePrice()); 
 }
 function updatePrice(){
+  let basePrice = rolls[rollType].basePrice;
   totalPrice = (basePrice + glazePrice)*packSize; 
   return totalPrice; 
 }
