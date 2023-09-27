@@ -37,4 +37,3 @@ for (let i in packDictionary){
   packoption.innerHTML = packDictionary[i].name;
   packoption.value = packDictionary[i].value; 
 }
-
