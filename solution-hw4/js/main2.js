@@ -38,30 +38,3 @@ for (let i in packDictionary){
   packoption.value = packDictionary[i].value; 
 }
 
-//initial setting the OG things
-let basePrice = 2.49;
-let glazePrice = 0;
-let totalPrice = 0;
-let packSize = 1;
-
-//when change event happens, we want to update glazePrice to whatever the value is gonna be
-//source for parseFloat: stackoverflow when looking up NaN error
-function glazingChange() {
-  glazePrice = parseFloat(this.value); 
-  console.log(glazePrice);
-  displayPrice(updatePrice()); 
-}
-
-function packChange(){
-  packSize = this.value; 
-  console.log(packSize);
-  displayPrice(updatePrice()); 
-}
-function updatePrice(){
-  totalPrice = (basePrice + glazePrice)*packSize; 
-  return totalPrice; 
-}
-
-function displayPrice(totalPrice){
-  price.textContent = "$ " + totalPrice.toFixed(2);
-}
