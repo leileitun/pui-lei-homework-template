@@ -35,7 +35,7 @@ const rollTitle = document.querySelector('#imagetitle'); //selects imagetitle HT
 rollTitle.innerText = rollType + ' Cinnamon Roll'; //updates text
 
 const rollImage = document.querySelector('#cartitem');//select cartpic html and stores it in this variable
-rollImage.src = '../assets/products/' + rollType + '-cinnamon-roll.jpg'; //load according to rolltype
+rollImage.src = '../assets/products/' + rolls[rollType].imageFile; //load according to rolltype
 
 //take the HTML elements and we want them to react on change (event type) and when changed, activate functions
 glazingElement.addEventListener("change", glazingChange);
