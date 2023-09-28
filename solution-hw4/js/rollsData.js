@@ -37,36 +37,42 @@ rollTitle.innerText = rollType + ' Cinnamon Roll'; //updates text
 const rollImage = document.querySelector('#cartitem');//select cartpic html and stores it in this variable
 rollImage.src = '../assets/products/' + rollType + '-cinnamon-roll.jpg'; //load according to rolltype
 
-// // let basePrice = rolls[rollType]['basePrice'];
-// // let glazePrice = 0;
-// // let totalPrice = 0;
-// // let packSize = 1;
+//take the HTML elements and we want them to react on change (event type) and when changed, activate functions
+glazingElement.addEventListener("change", glazingChange);
+packElement.addEventListener("change", packChange);
 
-// //when change event happens, we want to update glazePrice to whatever the value is gonna be
-// //source for parseFloat: stackoverflow when looking up NaN error
-// function glazingChange() {
-//   glazePrice = parseFloat(this.value); 
-//   console.log(glazePrice);
-//   displayPrice(updatePrice()); 
-// }
+let glazePrice = 0; 
+let totalPrice = 0; 
+let packSize = 1;
 
-// function packChange(){
-//   packSize = this.value; 
-//   console.log(packSize);
-//   displayPrice(updatePrice()); 
-// }
+//when change event happens, we want to update glazePrice to whatever the value is gonna be
+//source for parseFloat: stackoverflow when looking up NaN error
+function glazingChange() {
+  glazePrice = parseFloat(this.value); 
+  console.log(glazePrice);
+  displayPrice(updatePrice()); 
+}
 
-// let newbase = rolls[rollType]['basePrice'];
+function packChange(){
+  packSize = this.value; 
+  console.log(packSize);
+  displayPrice(updatePrice()); 
+}
 
-// function updatePrice(){
-//   totalPrice = (newbase + glazePrice)*packSize; 
-//   return totalPrice; 
-// }
-// updatePrice();
+let newbase = rolls[rollType]['basePrice'];
 
-// function displayPrice(totalPrice){
-//   price.textContent = "$ " + totalPrice.toFixed(2);
-// }
+function updatePrice(){
+  totalPrice = (newbase + glazePrice)*packSize; 
+  return totalPrice; 
+}
+
+updatePrice();
+
+function displayPrice(totalPrice){
+  price.textContent = "$ " + totalPrice.toFixed(2);
+}
+
+updatePrice();
 
 
 // // class Roll {

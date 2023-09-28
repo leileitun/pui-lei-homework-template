@@ -19,10 +19,6 @@ let glazingElement = document.querySelector('#glazing-select');
 let packElement = document.querySelector('#pack-select');
 let price = document.querySelector('#inlineprice'); 
 
-//take the HTML elements and we want them to react on change (event type) and when changed, activate functions
-glazingElement.addEventListener("change", glazingChange);
-packElement.addEventListener("change", packChange);
-
 //source summer course slides for for loop set up 
 for (let i in glazingDictionary){ //iterate over each object
   let glazeoption = document.createElement("option"); //creates option element and assigns it to glazeooption
@@ -36,32 +32,4 @@ for (let i in packDictionary){
   packElement.add(packoption);
   packoption.innerHTML = packDictionary[i].name;
   packoption.value = packDictionary[i].value; 
-}
-
-//initial setting the OG things
-let basePrice = 2.49;
-let glazePrice = 0;
-let totalPrice = 0;
-let packSize = 1;
-
-//when change event happens, we want to update glazePrice to whatever the value is gonna be
-//source for parseFloat: stackoverflow when looking up NaN error
-function glazingChange() {
-  glazePrice = parseFloat(this.value); 
-  console.log(glazePrice);
-  displayPrice(updatePrice()); 
-}
-
-function packChange(){
-  packSize = this.value; 
-  console.log(packSize);
-  displayPrice(updatePrice()); 
-}
-function updatePrice(){
-  totalPrice = (basePrice + glazePrice)*packSize; 
-  return totalPrice; 
-}
-
-function displayPrice(totalPrice){
-  price.textContent = "$ " + totalPrice.toFixed(2);
 }
