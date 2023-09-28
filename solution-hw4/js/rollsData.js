@@ -41,9 +41,13 @@ rollImage.src = '../assets/products/' + rollType + '-cinnamon-roll.jpg'; //load 
 glazingElement.addEventListener("change", glazingChange);
 packElement.addEventListener("change", packChange);
 
+let newbase = rolls[rollType]['basePrice'];
 let glazePrice = 0; 
 let totalPrice = 0; 
 let packSize = 1;
+
+
+displayPrice(updatePrice());
 
 //when change event happens, we want to update glazePrice to whatever the value is gonna be
 //source for parseFloat: stackoverflow when looking up NaN error
@@ -59,8 +63,6 @@ function packChange(){
   displayPrice(updatePrice()); 
 }
 
-let newbase = rolls[rollType]['basePrice'];
-
 function updatePrice(){
   totalPrice = (newbase + glazePrice)*packSize; 
   return totalPrice; 
@@ -73,6 +75,7 @@ function displayPrice(totalPrice){
 }
 
 updatePrice();
+displayPrice();
 
 
 // // class Roll {
