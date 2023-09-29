@@ -86,9 +86,6 @@ function updatePrice(){
     }
   }
   packSize = packSizeValue;
-  //console.log(newbase);
-  //console.log(glazePrice);
-  // console.log(packSize)
   totalPrice = (newbase + glazePrice)*packSize; 
   // console.log(totalPrice);
   return totalPrice; 
