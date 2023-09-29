@@ -46,7 +46,6 @@ let glazePrice = 0;
 let totalPrice = 0; 
 let packSize = 1;
 
-
 displayPrice(updatePrice());
 
 //when change event happens, we want to update glazePrice to whatever the value is gonna be
@@ -75,20 +74,25 @@ function displayPrice(totalPrice){
 }
 
 updatePrice();
-displayPrice();
 
+class Roll {
+    constructor(rollType, rollGlazing, packSize, basePrice) {
+        this.type = rollType;
+        this.glazing =  rollGlazing;
+        this.size = packSize;
+        this.basePrice = basePrice;
+    }
+}
 
-// // class Roll {
-// //     constructor(rollType, rollGlazing, packSize, basePrice) {
-// //         this.type = rollType;
-// //         this.glazing =  rollGlazing;
-// //         this.size = packSize;
-// //         this.basePrice = basePrice;
-// //     }
-// // }
+const cartButton = document.querySelector('#cartbutton');
+cartButton.addEventListener("click", function(){
+  const glazing = glazingElement.value; 
+  const pack = parseInt(packElement.value); 
+  const myArray = new Roll(rollType, glazing, pack, newbase);
+  cart.push(myArray);
+  console.log(cart);
+});
 
-// // const cartButton = document.querySelector('#cartbutton');
-// // cartButton.addEventListener("click",)
 
 
 
