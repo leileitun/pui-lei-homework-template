@@ -38,11 +38,11 @@ const queryString = window.location.search;
 const params = new URLSearchParams(queryString); //parses string to access values
 const rollType = params.get('roll');//gets value of roll from URL
 
-const rollTitle = document.querySelector('#imagetitle'); //selects imagetitle HTML and stores it in new variable to display title
-rollTitle.innerText = rollType + ' Cinnamon Roll'; //updates text
+const rollTitle = document.querySelector('#imagetitle'); 
+rollTitle.innerText = rollType + ' Cinnamon Roll'; 
 
-const rollImage = document.querySelector('#cartitem');//select cartpic html and stores it in this variable
-rollImage.src = '../assets/products/' + rolls[rollType].imageFile; //load according to rolltype
+const rollImage = document.querySelector('#cartitem');
+rollImage.src = '../assets/products/' + rolls[rollType].imageFile; 
 
 //take the HTML elements and we want them to react on change (event type) and when changed, activate functions
 glazingElement.addEventListener("change", glazingChange);
@@ -75,9 +75,9 @@ function packChange(){
   displayPrice(updatePrice()); 
 }
 
+//source: stackoverflow to look up for loop to access dictionary values using element when showing error for packsize
 function updatePrice(){
   let packSizeValue;
-  //console.log(packElement.value);
   for (const element in packDictionary){
     if (packDictionary[element].name === packElement.value) {
       packSizeValue = packDictionary[element].value;
@@ -108,6 +108,7 @@ class Roll {
     }
 }
 
+//source: summer course lecture on array push and addEventListener
 const cartButton = document.querySelector('#cartbutton');
 cartButton.addEventListener("click", function(){
   const glazing = glazingElement.value; 
