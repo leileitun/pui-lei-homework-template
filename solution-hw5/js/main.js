@@ -1,17 +1,17 @@
-// // create objects within with key-value pairs with name and value 
-// let glazingDictionary = {
-//   original: {name: "Keep original", value: 0.00},
-//   sugar: {name: "Sugar milk", value: 0.00},
-//   vanilla: {name: "Vanilla milk", value: 0.50},
-//   chocolate: {name: "Double chocolate", value: 1.50}
-// };
+// create objects within with key-value pairs with name and value 
+let glazingDictionary = {
+  original: {name: "Keep original", value: 0.00},
+  sugar: {name: "Sugar milk", value: 0.00},
+  vanilla: {name: "Vanilla milk", value: 0.50},
+  chocolate: {name: "Double chocolate", value: 1.50}
+};
 
-// let packDictionary = [
-//   {name: "1", value: 1},
-//   {name: "3", value: 3},
-//   {name: "6", value: 5},
-//   {name: "12", value: 10}
-// ];
+let packDictionary = [
+  {name: "1", value: 1},
+  {name: "3", value: 3},
+  {name: "6", value: 5},
+  {name: "12", value: 10}
+];
 
 //three interactions: glaze, size, prices
 //retrieve HTML elements so we can interact with them
@@ -99,14 +99,14 @@ function displayPrice(totalPrice){
 
 updatePrice();
 
-// class Roll {
-//     constructor(rollType, rollGlazing, packSize, basePrice) {
-//         this.type = rollType;
-//         this.glazing =  rollGlazing;
-//         this.size = packSize;
-//         this.basePrice = basePrice;
-//     }
-// }
+class Roll {
+    constructor(rollType, rollGlazing, packSize, basePrice) {
+        this.type = rollType;
+        this.glazing =  rollGlazing;
+        this.size = packSize;
+        this.basePrice = basePrice;
+    }
+}
 
 //source: summer course lecture on array push and addEventListener
 const cartButton = document.querySelector('#cartbutton');
@@ -117,13 +117,4 @@ cartButton.addEventListener("click", function(){
   cart.push(myArray);
   console.log(cart);
 });
-
-// const originalSugarMilk = new Roll('Original','Sugar Milk','1','2.49');
-// const walnutVanillaMilk = new Roll('Walnut','Vanilla Milk','12','39.90');
-// const raisinSugarMilk = new Roll('Raisin','Sugar Milk', '3','8.97');
-// const appleOriginal = new Roll('apple','original', '3','10.47');
-
-// console.log(Roll);
-
-
 

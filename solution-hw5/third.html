@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+
+  <head>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+
+  <div class = "header">
+    <div class = "logoimage">
+    <a href="./index.html"><img alt = "logo" src="../assets/logo/logo-01.svg"> </a>
+    </div>
+    <div class = "navigation">
+      <div class = "elements">
+        <a href="./index.html" class = "productpageno">PRODUCTS</a>
+        <a href="./third.html" class = "cartpageyes">CART</a>
+      </div>
+      <hr>
+      <p id = "imagetitle"> Shopping cart</p>
+    </div>
+  </div>
+  
+  <br>
+  <br>
+
+  <body>
+
+  <div class = "whole">
+  <div class = "checkout">
+    <template id = "cart-template">
+      <div class = "container">
+        <div class = "picremove">
+          <img alt = "originalcinnamon" id = "cartpic" src="">
+          <p class = "removal"><a href="">Remove</a></p>
+        </div>
+        <div>
+          <div class = "order">
+            <p id = "name"></p>
+            <p id = "glaze"></p>
+            <p id = "packsize"></p>
+          </div>
+        </div>
+        <div class = "pricepoint">
+          <p> </p>
+        </div>
+      </div>
+
+    </template>
+  </div>
+</div>
+  <hr id = "receiptline">
+
+  <div class = "total">
+    <div class = "totalword">
+      Total 
+    </div>
+    <div class = "totalprice">
+      $29.94
+    </div>
+  </div>
+  
+<button id = "checkout"> Check Out </button>
+
+<script type="text/javascript" src="./js/forcart.js" defer></script>
+
+</body>
+</html>
