@@ -1,3 +1,5 @@
+//source: github followed the pui lab note end to build and remove cart items 
+
 class Roll {
   constructor(rollType, rollGlazing, packSize, basePrice) {
     this.type = rollType;
