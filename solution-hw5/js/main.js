@@ -99,15 +99,6 @@ function displayPrice(totalPrice){
 
 updatePrice();
 
-class Roll {
-    constructor(rollType, rollGlazing, packSize, basePrice) {
-        this.type = rollType;
-        this.glazing =  rollGlazing;
-        this.size = packSize;
-        this.basePrice = basePrice;
-    }
-}
-
 //source: summer course lecture on array push and addEventListener
 const cartButton = document.querySelector('#cartbutton');
 cartButton.addEventListener("click", function(){

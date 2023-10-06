@@ -64,16 +64,15 @@ function displayCart(roll){
   cartItem.querySelector('#packsize').textContent = "Pack Size: " + roll.size;
   cartItem.querySelector('.pricepoint').textContent = "$ " + calculatePrice(roll).toFixed(2);
     
-    const removelink = cartItem.querySelector('.removal'); 
-    removelink.addEventListener('click', () => {
-      deleteItem(roll);
+  const removelink = cartItem.querySelector('.removal'); 
+  removelink.addEventListener('click', () => {
+    deleteItem(roll);
     });
 
     cartContainer.appendChild(cartItem);
 }
 
-//use for loop to display and close it
-//once click splice and go through for loop 
+//need a function to calcualte the total price and display the total price
 
 function calculateTotalPrice(cart) {
   let totalPrice = 0;
@@ -84,20 +83,16 @@ function calculateTotalPrice(cart) {
 }
 
 function displayTotalPrice() {
-  console.log("entered remove");
   const totalpriceElement = document.querySelector('.totalprice');
   const total = calculateTotalPrice(cart);
   totalpriceElement.textContent = "$ " + total;
 }
 
+//sourced mozilla developer to see syntax for array.prototype.splice
 function deleteItem(roll){
   const index = cart.indexOf(roll); 
-  console.log("index", index);
   if (index != -1){
-    console.log("entered remove");
     cart.splice(index, 1);
-    console.log(cart);
-    console.log("entered remove 2");
     displayTotalPrice();
 }
 roll.element.remove();
