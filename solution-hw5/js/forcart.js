@@ -56,11 +56,13 @@ cart.push(appleOriginal);
 function displayCart(roll){ 
   const cartContainer = document.querySelector('.checkout');
   const cartItem = document.querySelector('#cart-template').content.cloneNode(true);  //clone new row and returns it 
-    cartItem.querySelector('#cartpic').src = `../assets/products/${roll.type.toLowerCase()}` +`-cinnamon-roll.jpg`;
-    cartItem.querySelector('#name').textContent = roll.type + " Cinnamon Roll";
-    cartItem.querySelector('#glaze').textContent = "Glazing: " + roll.glazing;
-    cartItem.querySelector('#packsize').textContent = "Pack Size: " + roll.size;
-    cartItem.querySelector('.pricepoint').textContent = "$ " + calculatePrice(roll).toFixed(2);
+  roll.element = cartItem.querySelector('.newcontainer');
+
+  cartItem.querySelector('#cartpic').src = `../assets/products/${roll.type.toLowerCase()}` +`-cinnamon-roll.jpg`;
+  cartItem.querySelector('#name').textContent = roll.type + " Cinnamon Roll";
+  cartItem.querySelector('#glaze').textContent = "Glazing: " + roll.glazing;
+  cartItem.querySelector('#packsize').textContent = "Pack Size: " + roll.size;
+  cartItem.querySelector('.pricepoint').textContent = "$ " + calculatePrice(roll).toFixed(2);
     
     const removelink = cartItem.querySelector('.removal'); 
     removelink.addEventListener('click', () => {
@@ -70,6 +72,8 @@ function displayCart(roll){
     cartContainer.appendChild(cartItem);
 }
 
+//use for loop to display and close it
+//once click splice and go through for loop 
 
 function calculateTotalPrice(cart) {
   let totalPrice = 0;
@@ -80,18 +84,23 @@ function calculateTotalPrice(cart) {
 }
 
 function displayTotalPrice() {
+  console.log("entered remove");
   const totalpriceElement = document.querySelector('.totalprice');
   const total = calculateTotalPrice(cart);
   totalpriceElement.textContent = "$ " + total;
 }
 
-
 function deleteItem(roll){
   const index = cart.indexOf(roll); 
+  console.log("index", index);
   if (index != -1){
+    console.log("entered remove");
     cart.splice(index, 1);
+    console.log(cart);
+    console.log("entered remove 2");
     displayTotalPrice();
 }
+roll.element.remove();
 }
 
 for (let roll of cart){
