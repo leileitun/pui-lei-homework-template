@@ -1,0 +1,272 @@
+
+.header { 
+    align-items: center; 
+    display: flex;
+}
+
+.logoimage{ 
+    flex-grow: 0;
+    width: 400px;
+    padding: 20px;
+}
+
+.navigation {
+    flex-grow: 1; 
+}
+
+/*I used external source w3schools's margin property page to make spacing around elements more accurate to the mockups*/
+
+.elements { 
+    display: flex; 
+    justify-content: flex-end;
+    margin-right: 20px;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.logo { 
+    width: 400px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.productpage {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background-color: yellow;
+    margin-right: 50px;
+}
+
+.cartpageyes { 
+    text-decoration: none; 
+    color: black;
+    font-weight: bold;
+    background-color: yellow;
+    margin-right: -10px;
+}
+
+.cartpage {
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;
+}
+
+.productpageno { 
+    color: black;
+    margin-right: 50px;
+}
+
+hr {
+    height: 4px;
+    background: black; 
+}
+
+#imagetitle {
+    margin-right:290px;
+    margin-top: 50px;
+    font-size: 35px;
+}
+
+#hometitle {
+    margin-right:290px;
+    margin-top: 50px;
+    font-size: 35px;
+}
+
+.pic {
+    width: 285px;
+    height: 285px; 
+    border: 3px solid black;
+}
+
+/* Sourced how to specify the size of gutters between rows of my containers from stack overflow and mozilla developer */
+
+.image-container { 
+    display: flex;
+    gap: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.second-container {
+    display: flex;
+    gap: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/* I used sources mozilla developer and w3schools in order to learn more about flex-grow and how it can be used to grow relative to page */
+
+.details { 
+    flex-grow: 1;
+    display: inline-block;
+    text-align: left;
+    bottom: 0; 
+    left:0;
+    font-size: 20px;
+}
+
+.details:hover {
+    background-color: yellow;
+    padding: 4px;
+}
+
+.details:hover .roll {
+    font-weight: bold;
+}
+
+.roll {
+    text-decoration: underline;
+    color: black;
+    font-size: 28px;
+}
+
+.pricesize { 
+    font-size: 28px;
+    margin-top: 0px;
+    color: black;
+}
+
+#cartitem { 
+    width: 600px; 
+    height: 600px;
+    border: 3px solid black;
+    margin: auto;
+}
+
+.productdetail {
+    margin-left: 90px;
+    margin-right: 40px;
+}
+
+/* Sourced flex-direction css from mozilla developer to set how my flex items are placed */
+.productdetailpage {
+    display: flex;
+    flex-direction: row;
+}
+
+.alignorder { 
+    margin-right: 100px;
+}
+
+select { 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 26px;
+    padding: 10px;
+    width: 300px;
+    border: 3px solid black;
+}
+
+body { 
+    font-size: 26px;
+}
+
+/* used w3schools source to create a display of inline block so elements are centered and together*/
+
+#inlineprice { 
+    display: inline-block;
+    padding: 20px;
+    font-weight: bold;
+}
+
+#checkout { 
+    margin-left: 960px;
+    margin-top: 30px;
+}
+
+button { 
+    width: 180px;
+    font-size: 20px;
+    border: 3px solid black;
+    background-color: yellow;
+    font-weight: bold;
+    padding: 10px;
+}
+
+ /* sourced text-decoration from stack overflow to remove the default hyperlink purple color */
+
+.cartpageyes { 
+    text-decoration: none; 
+    color: black;
+    font-weight: bold;
+    background-color: yellow;
+}
+
+.cartpage {
+    text-decoration: none;
+    color: black;
+}
+
+.productpageno { 
+    color: black;
+    text-decoration:none;
+}
+
+#cartpic { 
+    width: 140px; 
+    height: 140px;
+    border: 3px solid black;
+    margin-left: 450px;
+}
+
+.checkout { 
+    display: flex;
+    flex-direction: column;
+}
+
+.container { 
+    display: flex;
+    flex-direction: row;
+}
+
+.picremove { 
+    flex-direction: column;
+    flex-grow: 0;
+    margin-right: 20px;
+}
+
+.order {
+    line-height: 7px;
+    margin-left: 25px;
+}
+
+.pricepoint { 
+    margin-left: auto;
+    margin-right: 50px;
+    margin-top: 12px;
+}
+
+.removal { 
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 450px;
+    margin-top: -5px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+a {
+    color: black;
+}
+
+#receiptline { 
+    margin: auto;
+    margin-left: 450px;
+}
+
+.total { 
+    display: flex;
+}
+
+.totalprice { 
+    margin-left: auto;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+
+.totalword { 
+    margin-left: 54%;
+    margin-top: 30px;
+}
+
