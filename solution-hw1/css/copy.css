@@ -1,0 +1,33 @@
+.logo { 
+    width: 400px;
+
+}
+
+hr { 
+    height: 4px;
+    background-color: black;
+}
+
+body { 
+    text-align: center;
+}
+
+img { 
+    width: 200px;
+}
+
+.rolldetails { 
+    display: inline-block;
+    text-align: left;
+}
+
+.rolltitle { 
+    flex-grow: 2;
+   align-content: center;
+}
+
+.products {
+    background-color: yellow;
+    /* width: 100px; */
+    text-align: center;
+}
