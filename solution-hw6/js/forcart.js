@@ -97,10 +97,11 @@ for (let roll of cart){
 displayTotalPrice();
 
 
+//functions direction sourced from pui late note 6 
+
 function saveToLocalStorage(){ 
   const cartString = JSON.stringify(cart);
   localStorage.setItem('storedCart',cartString); 
-  
 }
 
 

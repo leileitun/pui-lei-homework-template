@@ -110,6 +110,8 @@ updatePrice();
 
 //HW 6: 
 
+//stackoverflow source: how to store objects in localStorage when my cart was emptying each time i add a new type roll  
+//mozilla and stackoverflow source: spread syntax to add from parsed data 
 function loadFromLocalStorage() {
   const cartString = localStorage.getItem('storedCart');
   if (cartString) {
@@ -118,15 +120,12 @@ function loadFromLocalStorage() {
 }
 loadFromLocalStorage();
 
-//source: summer course lecture on array push and addEventListener
 const cartButton = document.querySelector('#cartbutton');
 cartButton.addEventListener("click", function(){
-  console.log('cart before', cart)
   const glazing = glazingElement.value; 
   const pack = packElement.value; 
   const newRoll = new Roll(rollType, glazing, pack, newbase);
   cart.push(newRoll);
-  console.log('cart after', cart)
   saveToLocalStorage();
 });
 
@@ -135,6 +134,5 @@ cartButton.addEventListener("click", function(){
 function saveToLocalStorage(){ 
   const cartString = JSON.stringify(cart);
   localStorage.setItem('storedCart',cartString); 
-  
 }
 
