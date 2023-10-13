@@ -87,6 +87,7 @@ function deleteItem(roll){
     displayTotalPrice();
 }
 roll.element.remove();
+saveToLocalStorage();
 }
 
 for (let roll of cart){
@@ -94,6 +95,13 @@ for (let roll of cart){
 }
 
 displayTotalPrice();
+
+
+function saveToLocalStorage(){ 
+  const cartString = JSON.stringify(cart);
+  localStorage.setItem('storedCart',cartString); 
+  
+}
 
 
 function retrieveFromLocalStorage(){ 

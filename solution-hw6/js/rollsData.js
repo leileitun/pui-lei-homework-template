@@ -28,10 +28,3 @@ const rolls = {
 //check if anything is in local storage
 //if there is use the data in the local storage 
 const cart = []; 
-
-if (localStorage.getItem('cart')) {
-    const cartData = JSON.parse(localStorage.getItem('cart'));
-} else {
-    const cart = [];
-}
-  

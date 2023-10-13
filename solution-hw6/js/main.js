@@ -108,6 +108,16 @@ function displayPrice(totalPrice){
 
 updatePrice();
 
+//HW 6: 
+
+function loadFromLocalStorage() {
+  const cartString = localStorage.getItem('storedCart');
+  if (cartString) {
+    cart.push(...JSON.parse(cartString)); 
+  }
+}
+loadFromLocalStorage();
+
 //source: summer course lecture on array push and addEventListener
 const cartButton = document.querySelector('#cartbutton');
 cartButton.addEventListener("click", function(){
@@ -125,5 +135,6 @@ cartButton.addEventListener("click", function(){
 function saveToLocalStorage(){ 
   const cartString = JSON.stringify(cart);
   localStorage.setItem('storedCart',cartString); 
+  
 }
 
