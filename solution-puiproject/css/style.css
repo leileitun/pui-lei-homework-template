@@ -10,6 +10,10 @@ body {
     color: #9AF9FF;
 }
 
+.about { 
+    color: #9AF9FF;
+}
+
 button { 
     width: 220px;
     height: 40px;
@@ -19,6 +23,12 @@ button {
     color: black;
     font-family: 'Space Mono', sans-serif;
     margin: 30px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 .bookshelf-all { 
@@ -61,6 +71,13 @@ button {
     background-color: #453333;
 }
 
+.tworectangle {
+    height: 200px;
+    width: 100%;
+    background-color: #453333;
+}
+
+
 .explanation { 
     text-align: center;
     padding: 30px;
@@ -92,18 +109,37 @@ h2 {
 
 .buttonrow { 
     display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    gap: 10px;
 }
 
 .footerrow { 
     display: flex;
     justify-content: space-between;
     padding: 0 40px;
-
+    padding: 30px;
 }
 
 .howto {
     margin-left: 200px;
     margin-right: 200px;
     padding: 100px;
+    text-align: center;
+}
+
+.howbold { 
+    color: black;
+    font-style: italic;
+}
+
+.startbutton { 
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: -50px;
+}
+
+.whereto {
     text-align: center;
 }
