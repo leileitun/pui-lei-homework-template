@@ -1,5 +1,5 @@
 function animateText() {
-  const textElement = document.getElementById('welcome');
+  const textElement = document.getElementById('welcome', );
 
   // Wrap each letter in a span
   const text = textElement.textContent;
