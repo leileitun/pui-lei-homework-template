@@ -7,10 +7,14 @@
 
 </head>
 <body>
-    <h1><a href="./home.html">My Reading Nook</a><h1>
 
-    <video controls autoplay muted>
-        <source class = "videoplay" src="./project/rain1.mp4" type="video/mp4">
+    <div class = "navigation">
+        <h1><a class = "title" href="./home.html">My Reading Nook</a></h1>
+        <p><a class = "about" href="./about.html">About</a></p>
+    </div>
+
+    <video controls autoplay>
+        <source class = "videoplay" src="./project/background2.mp4" type="video/mp4">
         Your browser does not support the video tag. 
     </video>
 
@@ -18,11 +22,6 @@
     <button class = "button"> Change Music </button>
     
     <script type="text/javascript" src="./file.js" defer></script>
-
-    <input type = "text" class = "form-control" id = "clientId" placeholder = "">
-    <input type = "text" class = "form-control" id = "clientSecret" placeholder = ""> 
-    <input class = "button primary" type = "button" onclick="requestAuthorization()" value="Request Authorization">
-    
 
 </body>
 </html>

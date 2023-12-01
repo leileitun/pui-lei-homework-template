@@ -4,6 +4,7 @@
     <title>How To Page</title>
     <link href='https://fonts.googleapis.com/css?family=Space Mono' rel='stylesheet'>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
 </head>
 <body>
@@ -13,23 +14,55 @@
         <p><a class = "about" href="./about.html">About</a></p>
     </div>
 
-    <div class = "howto">
-        <p>Here's what you can do with us: 
+    <div class = "container">
+        
+        <p id = "textwelcome">Here's what you can do with us.</p>
         <br>
-        <br>
-        <p class = "howbold">1. Immerse yourself in reading</p>
-        With our selection of lo-fi tunes and video backdrops, you can create the perfect reading ambiance for yourself. The sound of light rain drops, the hum of a distant train... everything is right at your reach. 
-        <br> 
-        <br>   
-        <p class = "howbold">2. Expand your bookshelf</p> 
-        <br> Unsatisfied with Goodreads? iBooks? Here at The Reading Nook, we keep things simple and effective. Upload your collection, write a review, and that’s it. No adding friends, being overwhelmed by book advertisements. We just care about YOUR journey.
-        <br>   
-        <br>
-        <p class = "howbold">3. Keep private things private</p> 
-        <br> Your reading choices are yours. Reading is an intimate experience. This is why book covers are carefully chosen, protecting authors and book covers. How you choose to title each book is your choice. 
-        <br> 
-        <br>  
-        <p class = "howbold">4. Have fun!</p>
+
+        <!-- First Row: Photo then Text -->
+        <div class = "row-howto wow fadeIn">
+            <div class = "photo-row">
+                <img src="./project/clouds.jpeg" alt="Picture of cloud with rain">
+            </div>
+            <div class = "text-row">
+                <p class = "howbold">1. Immerse yourself in reading</p>
+                With our selection of lo-fi tunes and video backdrops, you can create the perfect reading ambiance for yourself. 
+                The sound of light rain drops, the hum of a distant train... everything is right at your reach. 
+            </div>
+        </div>
+
+        <div class = "row-howto wow fadeIn">
+            <div class = "text-row">
+                <p class = "howbold">2. Expand your bookshelf</p> 
+                Unsatisfied with Goodreads? iBooks? Here at The Reading Nook, we keep things simple and effective. 
+                Upload your collection, write a review, and that’s it. No adding friends, being overwhelmed by book advertisements. 
+                We just care about YOUR journey.        
+            </div>
+            <div class = "photo-row">
+                <img src="./project/bookshelf.jpeg" alt="Picture of a bookshelf">
+            </div>
+        </div>
+
+        <div class = "row-howto">
+            <div class = "photo-row">
+                <img src="./project/book.jpeg" alt="Picture of stack of books">
+            </div>
+            <div class = "text-row">
+                <p class = "howbold">3. Keep private things private</p> 
+                Your reading choices are yours. Reading is an intimate experience. 
+                This is why book covers are carefully chosen, protecting authors and book covers. 
+                How you choose to title each book is your choice.  
+            </div>
+        </div>
+
+        <div class = "row-howto">
+            <div class = "text-row">
+                <p class = "howbold">4. Have fun!</p>   
+            </div>
+            <div class = "photo-row">
+            </div>
+        </div>
+    
     </div>
 
     <div class = "startbutton">
@@ -50,9 +83,12 @@
             <div class = "footer2">
                 <p>Thanks for being here :]</p>
             </div>
-        </div>
+    </div> 
 
+    <script src="./file.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.3.0/wow.min.js"></script>
     
+
 
 </body>
 </html>

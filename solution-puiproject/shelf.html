@@ -11,7 +11,11 @@
     <h2>My Books</h2>
     <button class = "button"> Add Book </button>
     
-    <div class = "bookshelf-all">
+    <div id = "bookshelf-all">
+
+        <template id = "book-template">
+
+        </template>
 
         <div class = "book all" id = "book-one">
             <div class = "book-left">
@@ -38,63 +42,8 @@
                 </div>
             </div>
         </div>
-
-        <div class = "book all" id = "book-two">
-            <div class = "book-left">
-            <div class = "book-details">
-                <img class = "bookpic" src = "project/sunsetimage.png">
-                <div class = "booktitletext">
-                    <div class = "booktitle">
-                        Yellowface
-                    </div>
-                    <div class = "booktext">
-                        5/5 I could not put this book down! It was highly rated for a lot of people, and even with high expectations, I felt it lived up to the hype. 
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class = "book-right">
-                <div class = "delete-edit">
-                    <div class = "deleteicon">
-                        delete
-                    </div>
-                    <div class = "editicon">
-                        edit
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class = "book all" id = "book-three">
-            <div class = "book-left">
-            <div class = "book-details">
-                <img class = "bookpic" src = "project/flower.jpeg">
-                <div class = "booktitletext">
-                    <div class = "booktitle">
-                        The Seven Husbands of Evelyn Hugo 
-                    </div>
-                    <div class = "booktext">
-                        5/5 I was in a reading slump before this book and I quickly fell into Taylor Jenkins Reid books quickly after this one. I fell in love with the characters and I was following every word!
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class = "book-right">
-                <div class = "delete-edit">
-                    <div class = "deleteicon">
-                        delete
-                    </div>
-                    <div class = "editicon">
-                        edit
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
+        </template>
     </div>
-
-
 
     <script type="text/javascript" src="./js/file.js" defer></script>
 

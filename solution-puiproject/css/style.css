@@ -1,17 +1,28 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Space Mono', sans-serif;
-    color: white;
-    background-color:#A35656;
+    color: black;
+    background-color:white;
+    display: none;
 }
 
 .title {
     text-decoration: none;
     font-size: 25px;
-    color: #9AF9FF;
+    color: #A35656;
 }
 
 .about { 
-    color: #9AF9FF;
+    color: #A35656;
+}
+
+.abouttext {
+    color: black;
+    text-align: center;
 }
 
 button { 
@@ -22,6 +33,7 @@ button {
     border-color: #9AF9FF;
     color: black;
     font-family: 'Space Mono', sans-serif;
+
     margin: 30px;
     text-decoration: none;
 }
@@ -47,6 +59,7 @@ a {
     padding: 0 40px;
     margin-top: 20px;
     color: #9AF9FF;
+    z-index: 100;
 }
 
 .introduction {
@@ -58,11 +71,14 @@ a {
 
 #welcome { 
     font-size: 30px;
+    font-weight: 900;
+    text-align: center;
 }
 
 #textwelcome { 
     font-size: 20px;
-    color: rgb(189, 187, 187);
+    color: rgb(61, 3, 3);
+    text-align: center;
 }
 
 .rectangle {
@@ -74,7 +90,7 @@ a {
 .tworectangle {
     height: 200px;
     width: 100%;
-    background-color: #453333;
+    background-color: #914444;
 }
 
 
@@ -120,9 +136,12 @@ h2 {
     justify-content: space-between;
     padding: 0 40px;
     padding: 30px;
+    color: white;
 }
 
 .howto {
+    margin-top: 50px;
+    margin-bottom: 1000px;
     margin-left: 200px;
     margin-right: 200px;
     padding: 100px;
@@ -134,12 +153,81 @@ h2 {
     font-style: italic;
 }
 
+.about-container { 
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 200px;
+    margin-bottom: 400px;
+}
+
+.container {
+    margin-top: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.row-howto {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    margin-bottom: 20px;
+    gap: 40px;
+}
+
+.photo-row img { 
+    width: 150px;
+}
+
+.photo-row { 
+    flex: 1; 
+    display: flex; 
+    justify-content: flex-start; 
+    padding: 5px;
+    margin-right: 50px;
+}
+
+
+.photo-row {
+    max-width: 100%;
+    height: auto;
+}
+
+.row-howto:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
 .startbutton { 
     text-align: center;
     margin-bottom: 100px;
-    margin-top: -50px;
+    margin-top: 30px;
 }
 
 .whereto {
     text-align: center;
+}
+
+.animate-welcome .letter {
+    display: inline-block;
+    /* opacity: 0; Initially hide the letters */
+    transform-origin: 50% 100%;
+    transform: translate3d(0,100%,0);
+  }
+  
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+}
+
+video { 
+    width: 100%;
+    height: 800px;
+
 }
