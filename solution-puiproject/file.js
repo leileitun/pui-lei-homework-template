@@ -44,4 +44,34 @@ document.addEventListener("DOMContentLoaded", function () {
 setTimeout(function() {
   // Display the body content after the delay
   document.body.style.display = 'block';
-}, 1000);
+}, 500);
+
+class Book { 
+  constructor (title, text) {
+    this.title = title;
+    this.text = text; 
+    this.bookphoto =  bookphoto;  
+  }
+}
+
+const bookSet = new Set (); 
+
+function addBook(title, text){
+  const book = new Book(title, text); 
+  bookSet.add(book); 
+  return book;
+}
+
+function updateBook(book){
+  const template = document.querySelector('#book-template');
+  const clone = template.textContent.cloneNode(true);
+
+  book.element = clone.querySelector('.book');
+  book.element.querySelector('.bookpic').src = book.bookphoto; 
+  book.element.querySelector('.booktitle').textContent = book.title;
+  book.element.querySelector('.booktext').textContent = book.text;
+
+  const bookshelf = document.querySelector('#bookshelf-all');
+  bookshelf.appendChild(book.element);
+}
+

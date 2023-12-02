@@ -9,13 +9,12 @@
 
     <h1>My Reading Nook</h1>
     <h2>My Books</h2>
+    
     <button class = "button"> Add Book </button>
     
     <div id = "bookshelf-all">
 
         <template id = "book-template">
-
-        </template>
 
         <div class = "book all" id = "book-one">
             <div class = "book-left">
@@ -42,8 +41,18 @@
                 </div>
             </div>
         </div>
+        
         </template>
+    
     </div>
+
+    <div id="addBookForm" style="display: none;">
+        <input type="text" id="newBookTitle" placeholder="Book Title">
+        <textarea id="newBookReview" placeholder="Book Review"></textarea>
+        <button onclick="submitNewBook()">Submit</button>
+    </div>
+    <button onclick="showAddBookForm()">Add Book</button>
+    
 
     <script type="text/javascript" src="./js/file.js" defer></script>
 

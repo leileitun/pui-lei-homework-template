@@ -154,8 +154,8 @@ h2 {
 }
 
 .about-container { 
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-left: 200;
+    margin-right: 200px;
     margin-top: 200px;
     margin-bottom: 400px;
 }
@@ -216,7 +216,7 @@ h2 {
 .video-container { 
     position: relative: 
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .video-container video {
