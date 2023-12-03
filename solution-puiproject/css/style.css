@@ -208,11 +208,10 @@ h2 {
 
 .animate-welcome .letter {
     display: inline-block;
-    /* opacity: 0; Initially hide the letters */
     transform-origin: 50% 100%;
     transform: translate3d(0,100%,0);
-  }
-  
+}
+
 .video-container { 
     position: relative: 
     width: 100%;
@@ -226,6 +225,7 @@ h2 {
     top: 0; 
     left: 0;
     z-index: -1;
+    background: black;
 }
 
 .title-blue {
@@ -244,3 +244,51 @@ h2 {
 .button-rows { 
     flex-grow: 1;
 }
+
+#bookshelf-all {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust the min and max values as needed */
+    gap: 70px; /* This adds space between the books */
+    padding: 100px; /* This adds padding around the grid */
+}
+
+.booktext {
+    font-size: 10px;
+}
+
+.book-details {
+    display: flex;
+    align-items: center; /* Aligns items vertically in the center */
+}
+
+.bookpic {
+    width: 100px; /* Adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between image and text */
+}
+
+.booktitletext {
+    flex-grow: 1; /* Allows the text section to take up the remaining space */
+}
+
+.bookinput { 
+    display: flex;
+    margin-left: 100px;
+    margin-bottom: 200px;
+    flex-direction: column;
+    max-width: 500px;
+    gap: 20px;
+}
+
+#inputtext {
+    height: 200px;
+}
+
+.delete { 
+    font-size: 8px;
+} 
+
+.row-howto { 
+    opacity: 0;
+}
+

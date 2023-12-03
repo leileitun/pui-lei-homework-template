@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home Page</title>
+    <link href='https://fonts.googleapis.com/css?family=Space Mono' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+    <div class = "navigation">
+        <p><a class = "title" href="./home.html">The Reading Nook</a></p>
+        <p><a class = "about" href="./howto.html">About</a></p>
+    </div>
+    
+    <div id = "bookshelf-all">
+
+        <div class = "book all" id = "book-one">
+            <div class = "book-left">
+            <div class = "book-details">
+                <img class = "bookpic" src = "project/cover.png">
+                <div class = "booktitletext">
+                    <div class = "booktitle">
+                        Crying in H Mart
+                    </div>
+                    <div class = "booktext">
+                        4/5 The writing and style was not as riveting but the storyline and all the experiences the author mentions is so riveting and relatable. 
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class = "book-right">
+                <div class = "delete">
+                    <div class = "deleteicon">
+                        <p class = "delete">delete</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <template id = "book-template">
+
+        <div class = "book all" id = "book-one">
+            <div class = "book-left">
+            <div class = "book-details">
+                <img class = "bookpic" src = "project/cover.png">
+                <div class = "booktitletext">
+                    <div class = "booktitle">
+                        Crying in H Mart
+                    </div>
+                    <div class = "booktext">
+                        4/5 The writing and style was not as riveting but the storyline and all the experiences the author mentions is so riveting and relatable. 
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class = "book-right">
+                <div class = "delete">
+                    <div class = "deleteicon">
+                        delete
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        </template>
+    
+    </div>
+
+    <div class = "bookinput">
+        <input type="text" id="inputtitle" placeholder="Book Title">
+        <textarea id="inputtext" placeholder="Book Review"></textarea>
+        <button onclick="submitBook()">Add Book</button>    
+    </div>
+   
+
+    <div class = "tworectangle">
+
+    <div class = "footerrow">
+        <div class = "footer">
+            <p>Created by Hnin Lei Lei Tun</p>
+            <p>Carnegie Mellon University</p>
+            <p>Created by Hnin Lei Lei Tun</p>
+        </div>
+    
+        <div class = "footer2">
+            <p>Thanks for being here :]</p>
+        </div>
+    </div>
+
+    <!-- <script src="./editor.js" defer></script> -->
+   
+</body>
+</html>
