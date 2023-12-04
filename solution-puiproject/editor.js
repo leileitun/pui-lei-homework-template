@@ -42,19 +42,19 @@ function submitBook(){
 }
 
 function saveBooksToLocalStorage() {
-  const booksArray = Array.from(bookSet); // Convert the set to an array
-  const booksArrayString = JSON.stringify(booksArray); // Serialize the array to a string
-  localStorage.setItem('bookstore', booksArrayString); // Save the string to local storage
+  const booksArray = Array.from(bookSet); 
+  const booksArrayString = JSON.stringify(booksArray); 
+  localStorage.setItem('bookstore', booksArrayString); 
 }
 
 function loadBooksFromLocalStorage() {
   const booksArrayString = localStorage.getItem('bookstore');
   if (booksArrayString) {
-    const booksArray = JSON.parse(booksArrayString); // Deserialize the string back into an array
+    const booksArray = JSON.parse(booksArrayString); 
     for (const bookData of booksArray) {
-      const book = new Book(bookData.title, bookData.text, bookData.bookphoto); // Recreate Book objects
+      const book = new Book(bookData.title, bookData.text, bookData.bookphoto); 
       bookSet.add(book);
-      updateBook(book); // Update the DOM with the book
+      updateBook(book); 
     }
   }
 }
