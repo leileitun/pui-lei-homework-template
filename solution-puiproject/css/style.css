@@ -20,9 +20,10 @@ body {
     color: #A35656;
 }
 
-.abouttext {
+#abouttext {
     color: black;
     text-align: center;
+    padding: 200px;
 }
 
 button { 
@@ -84,7 +85,7 @@ a {
 .rectangle {
     height: 1000px;
     width: 100%;
-    background-color: #453333;
+    background-color: #914444;
 }
 
 .tworectangle {
