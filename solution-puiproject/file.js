@@ -51,3 +51,7 @@ window.onload = function () {
   animateText();
   animateRow();
 };
+
+function clearLocalStorage() {
+  localStorage.clear();
+}
