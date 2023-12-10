@@ -13,22 +13,9 @@ function animateText() {
     .add({
       targets: '#welcome span',
       opacity: [0, 1],
-      translateY: [20, 0],
-      translateZ: 0,
-      duration: 1000,
       easing: 'easeOutExpo',
-      delay: (el, i) => 50 * i
+      delay: (el, i) => 40 * i
     })
-
-.add({
-    targets: '#welcome span',
-      opacity: 1,
-      translateY: [0, -20],
-      translateZ: 0,
-      duration: 1000,
-      easing: 'easeInExpo',
-      delay: (el, i) => 50 * i
-  });
 }
 
 setTimeout(function() {
@@ -42,7 +29,6 @@ function animateRow(){
     targets: '.row-howto',
     opacity: [0,1], 
     easing: 'easeInQuad',
-    delay: 1500,
     delay: anime.stagger(1000),
   });
 }
@@ -52,6 +38,3 @@ window.onload = function () {
   animateRow();
 };
 
-function clearLocalStorage() {
-  localStorage.clear();
-}
