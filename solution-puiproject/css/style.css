@@ -83,7 +83,7 @@ a {
 }
 
 .rectangle {
-    height: 1000px;
+    height: 800px;
     width: 100%;
     background-color: #914444;
 }
@@ -299,7 +299,7 @@ h2 {
     }
 
     .rectangle { 
-        height: 750px;
+        height: 650px;
     }
 
     .emojis {
