@@ -35,7 +35,6 @@ button {
     border-color: #9AF9FF;
     color: black;
     font-family: 'Space Mono', sans-serif;
-    /* margin: 30px; */
     text-decoration: none;
 }
 
@@ -156,7 +155,7 @@ h2 {
 }
 
 .about-container { 
-    margin-left: 200;
+    margin-left: 200px;
     margin-right: 200px;
     margin-top: 200px;
     margin-bottom: 400px;
@@ -241,13 +240,14 @@ h2 {
 
 .button-rows { 
     flex-grow: 1;
+    margin-left: 30px;
+    margin-top: 25px;
 }
 
 #bookshelf-all {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust the min and max values as needed */
-    gap: 70px; /* This adds space between the books */
-    padding: 100px; /* This adds padding around the grid */
+    gap: 70px; 
+    padding: 100px; 
 }
 
 .booktext {
@@ -256,17 +256,17 @@ h2 {
 
 .book-details {
     display: flex;
-    align-items: center; /* Aligns items vertically in the center */
+    align-items: center; 
 }
 
 .bookpic {
-    width: 100px; /* Adjust as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 20px; /* Space between image and text */
+    width: 100px; 
+    height: auto; 
+    margin-right: 20px;
 }
 
 .booktitletext {
-    flex-grow: 1; /* Allows the text section to take up the remaining space */
+    flex-grow: 1;
 }
 
 .bookinput { 
@@ -316,16 +316,12 @@ h2 {
 
     .button { 
         width: 180px;
-        margin: 0;
-        margin-top: 30px;
-        margin-left: 30px;
+        height: 30px;
+        margin-top: 10px;
+        margin-left: 10px;
     }
 
     .title-blue {
-        font-size: 25px;
-        margin-top: 
+        font-size: 20px;
     }
-
 }
-
-
