@@ -1,4 +1,4 @@
-//referenced Labs 3-6 on how to submit note and update note based on input
+//referenced Labs 3-6 on how to submit note and update note based on input to mimic the bookshelf input 
 //referenced last homework for local storage saving and retrieving
 
 class Book { 
