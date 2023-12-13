@@ -251,7 +251,11 @@ h2 {
 }
 
 .booktext {
-    font-size: 10px;
+    font-size: 15px;
+}
+
+.booktitle {
+    font-size: 20px;
 }
 
 .book-details {
@@ -276,10 +280,6 @@ h2 {
     flex-direction: column;
     max-width: 500px;
     gap: 20px;
-}
-
-#inputtext {
-    height: 200px;
 }
 
 .delete { 
